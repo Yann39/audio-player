@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>LecteurAudio</ProjectName>
+    <ProjectGuid>{077C2FAB-CA46-4805-9BD0-36F3295DA051}</ProjectGuid>
+    <RootNamespace>AudioPlayer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Fonctions.cpp" />
+    <ClCompile Include="FonctionsFmod.cpp" />
+    <ClCompile Include="LecteurAudio.cpp" />
+    <ClCompile Include="LecteurAudioDlg.cpp" />
+    <ClCompile Include="MaintientBoutonAvancer.cpp" />
+    <ClCompile Include="MaintientBoutonReculer.cpp" />
+    <ClCompile Include="ModifSliderAvancement.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fmod.h" />
+    <ClInclude Include="fmod.hpp" />
+    <ClInclude Include="fmod_codec.h" />
+    <ClInclude Include="fmod_dsp.h" />
+    <ClInclude Include="fmod_errors.h" />
+    <ClInclude Include="fmod_output.h" />
+    <ClInclude Include="Fonctions.h" />
+    <ClInclude Include="FonctionsFmod.h" />
+    <ClInclude Include="LecteurAudio.h" />
+    <ClInclude Include="LecteurAudioDlg.h" />
+    <ClInclude Include="MaintientBoutonAvancer.h" />
+    <ClInclude Include="MaintientBoutonReculer.h" />
+    <ClInclude Include="ModifSliderAvancement.h" />
+    <CustomBuild Include="Resource.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Génération d'un fichier de mappage pour le compilateur d'aide...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo // Generated Help Map file.  Used by AudioPlayer.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Génération d'un fichier de mappage pour le compilateur d'aide...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo // Generated Help Map file.  Used by AudioPlayer.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\btn_aide_disabled.bmp" />
+    <Image Include="res\btn_aide_focused.bmp" />
+    <Image Include="res\btn_aide_normal.bmp" />
+    <Image Include="res\btn_aide_selected.bmp" />
+    <Image Include="res\btn_ajoutertitre_disabled.bmp" />
+    <Image Include="res\btn_ajoutertitre_focused.bmp" />
+    <Image Include="res\btn_ajoutertitre_normal.bmp" />
+    <Image Include="res\btn_ajoutertitre_selected.bmp" />
+    <Image Include="res\btn_avancer_disabled.bmp" />
+    <Image Include="res\btn_avancer_focused.bmp" />
+    <Image Include="res\btn_avancer_normal.bmp" />
+    <Image Include="res\btn_avancer_selected.bmp" />
+    <Image Include="res\btn_back_disabled.bmp" />
+    <Image Include="res\btn_back_focused.bmp" />
+    <Image Include="res\btn_back_normal.bmp" />
+    <Image Include="res\btn_back_selected.bmp" />
+    <Image Include="res\btn_chargerliste_disabled.bmp" />
+    <Image Include="res\btn_chargerliste_focused.bmp" />
+    <Image Include="res\btn_chargerliste_normal.bmp" />
+    <Image Include="res\btn_chargerliste_selected.bmp" />
+    <Image Include="res\btn_down_disabled.bmp" />
+    <Image Include="res\btn_down_focused.bmp" />
+    <Image Include="res\btn_down_normal.bmp" />
+    <Image Include="res\btn_down_selected.bmp" />
+    <Image Include="res\btn_lecture_disabled.bmp" />
+    <Image Include="res\btn_lecture_focused.bmp" />
+    <Image Include="res\btn_lecture_normal.bmp" />
+    <Image Include="res\btn_lecture_selected.bmp" />
+    <Image Include="res\btn_next_disabled.bmp" />
+    <Image Include="res\btn_next_focused.bmp" />
+    <Image Include="res\btn_next_normal.bmp" />
+    <Image Include="res\btn_next_selected.bmp" />
+    <Image Include="res\btn_pause_disabled.bmp" />
+    <Image Include="res\btn_pause_focused.bmp" />
+    <Image Include="res\btn_pause_normal.bmp" />
+    <Image Include="res\btn_pause_selected.bmp" />
+    <Image Include="res\btn_quitter_disabled.bmp" />
+    <Image Include="res\btn_quitter_focused.bmp" />
+    <Image Include="res\btn_quitter_normal.bmp" />
+    <Image Include="res\btn_quitter_selected.bmp" />
+    <Image Include="res\btn_reculer_disabled.bmp" />
+    <Image Include="res\btn_reculer_focused.bmp" />
+    <Image Include="res\btn_reculer_normal.bmp" />
+    <Image Include="res\btn_reculer_selected.bmp" />
+    <Image Include="res\btn_retirertitre_disabled.bmp" />
+    <Image Include="res\btn_retirertitre_focused.bmp" />
+    <Image Include="res\btn_retirertitre_normal.bmp" />
+    <Image Include="res\btn_retirertitre_selected.bmp" />
+    <Image Include="res\btn_retirertout_disabled.bmp" />
+    <Image Include="res\btn_retirertout_focused.bmp" />
+    <Image Include="res\btn_retirertout_normal.bmp" />
+    <Image Include="res\btn_retirertout_selected.bmp" />
+    <Image Include="res\btn_sauvegarderliste_disabled.bmp" />
+    <Image Include="res\btn_sauvegarderliste_focused.bmp" />
+    <Image Include="res\btn_sauvegarderliste_normal.bmp" />
+    <Image Include="res\btn_sauvegarderliste_selected.bmp" />
+    <Image Include="res\btn_stop_disabled.bmp" />
+    <Image Include="res\btn_stop_focused.bmp" />
+    <Image Include="res\btn_stop_normal.bmp" />
+    <Image Include="res\btn_stop_selected.bmp" />
+    <Image Include="res\btn_trieraz_disabled.bmp" />
+    <Image Include="res\btn_trieraz_focused.bmp" />
+    <Image Include="res\btn_trieraz_normal.bmp" />
+    <Image Include="res\btn_trieraz_selected.bmp" />
+    <Image Include="res\btn_trierza_disabled.bmp" />
+    <Image Include="res\btn_trierza_focused.bmp" />
+    <Image Include="res\btn_trierza_normal.bmp" />
+    <Image Include="res\btn_trierza_selected.bmp" />
+    <Image Include="res\btn_up_disabled.bmp" />
+    <Image Include="res\btn_up_focused.bmp" />
+    <Image Include="res\btn_up_normal.bmp" />
+    <Image Include="res\btn_up_selected.bmp" />
+    <Image Include="res\focused.bmp" />
+    <Image Include="res\icone_son.bmp" />
+    <Image Include="res\knotify.ico" />
+    <Image Include="res\LecteurAudio.ico" />
+    <Image Include="res\musik.bmp" />
+    <Image Include="res\normal.bmp" />
+    <Image Include="res\play.bmp" />
+    <Image Include="res\quitter.bmp" />
+    <Image Include="res\selected.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LecteurAudio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="fmodex_vc.lib">
+      <DeploymentContent>false</DeploymentContent>
+    </Library>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LecteurAudio.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

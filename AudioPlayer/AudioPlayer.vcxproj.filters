@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\FModex">
+      <UniqueIdentifier>{cc80a482-c649-43a9-b107-4b03aa0afeff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources\FModex">
+      <UniqueIdentifier>{6c2fcb37-5497-466c-90f6-c036a4ccd526}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Fonctions.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="FonctionsFmod.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="LecteurAudio.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="LecteurAudioDlg.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MaintientBoutonAvancer.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MaintientBoutonReculer.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifSliderAvancement.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Fonctions.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="FonctionsFmod.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="LecteurAudio.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="LecteurAudioDlg.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MaintientBoutonAvancer.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MaintientBoutonReculer.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifSliderAvancement.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.h">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.hpp">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_codec.h">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_dsp.h">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_errors.h">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_output.h">
+      <Filter>Fichiers d%27en-tête\FModex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\btn_aide_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_aide_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_aide_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_aide_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_ajoutertitre_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_ajoutertitre_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_ajoutertitre_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_ajoutertitre_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_avancer_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_avancer_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_avancer_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_avancer_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_back_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_back_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_back_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_back_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_chargerliste_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_chargerliste_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_chargerliste_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_chargerliste_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_down_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_down_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_down_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_down_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_lecture_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_lecture_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_lecture_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_lecture_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_next_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_next_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_next_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_next_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_pause_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_pause_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_pause_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_pause_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_quitter_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_quitter_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_quitter_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_quitter_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_reculer_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_reculer_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_reculer_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_reculer_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertitre_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertitre_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertitre_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertitre_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertout_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertout_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertout_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_retirertout_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_sauvegarderliste_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_sauvegarderliste_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_sauvegarderliste_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_sauvegarderliste_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_stop_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_stop_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_stop_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_stop_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trieraz_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trieraz_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trieraz_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trieraz_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trierza_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trierza_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trierza_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_trierza_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_up_disabled.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_up_focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_up_normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\btn_up_selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\focused.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\icone_son.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\knotify.ico">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\LecteurAudio.ico">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\musik.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\normal.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\play.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\quitter.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+    <Image Include="res\selected.bmp">
+      <Filter>Fichiers de ressources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LecteurAudio.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="fmodex_vc.lib">
+      <Filter>Fichiers de ressources\FModex</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

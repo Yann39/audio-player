@@ -1,0 +1,309 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LecteurAudio.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""     // Composants standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\knotify.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 262, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos du projet"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Ce logiciel a été développé dans le cadre du cours d'IHM de L3 Informatique à l'université de Bourgogne.\n\nDéveloppeur : Yann\nContact : rockyracer@mailfence.com\nAnnée : 2007/2008",IDC_STATIC,7,7,248,50,SS_NOPREFIX
+    DEFPUSHBUTTON   "Retour",IDOK,59,71,54,16,WS_GROUP
+    CONTROL         268,IDC_STATIC,"Static",SS_BITMAP,161,22,85,79
+END
+
+IDC_LECTEUR DIALOGEX 0, 0, 338, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Lecteur audio"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Lecture",ID_BTN_JOUER,"Button",BS_OWNERDRAW | WS_TABSTOP,15,124,49,16
+    CONTROL         "&Quitter",ID_BTN_QUITTER,"Button",BS_OWNERDRAW | WS_TABSTOP,267,178,52,16
+    CONTROL         "&Aide",ID_BTN_AIDE,"Button",BS_OWNERDRAW | WS_TABSTOP,267,159,52,16
+    LISTBOX         IDC_LIST1,120,21,191,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "Ajouter un titre ...",ID_BTN_AJOUTER_UN_TITRE,"Button",BS_OWNERDRAW | WS_TABSTOP,14,20,101,16
+    GROUPBOX        "Liste de lecture",IDC_STATIC,7,7,324,99
+    CONTROL         "||",ID_BTN_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,83,124,17,16
+    CONTROL         ">>",ID_BTN_SUIVANT,"Button",BS_OWNERDRAW | WS_TABSTOP,301,124,17,16
+    CONTROL         "<<",ID_BTN_PRECEDENT,"Button",BS_OWNERDRAW | WS_TABSTOP,101,124,17,16
+    CONTROL         "=",ID_BTN_ARRET,"Button",BS_OWNERDRAW | WS_TABSTOP,65,124,17,16
+    CONTROL         "Retirer un titre",ID_BTN_ENLEVER_LE_TITRE_SELECTIONNE,
+                    "Button",BS_OWNERDRAW | WS_TABSTOP,14,36,101,16
+    LTEXT           "0%",IDC_STATIC,26,188,12,8
+    LTEXT           "100%",IDC_STATIC,69,188,20,8
+    CONTROL         "",IDC_VOLUME,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,25,174,64,12,WS_EX_DLGMODALFRAME
+    LTEXT           "Avancement :",IDC_STATIC,173,115,47,8
+    CONTROL         "",IDC_AVANCEMENT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,138,124,144,16,WS_EX_DLGMODALFRAME
+    CONTROL         "Charger une liste...",IDC_BTN_CHARGER,"Button",BS_OWNERDRAW | WS_TABSTOP,14,68,101,16
+    LISTBOX         IDC_LIST2,241,163,14,13,LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Passage automatique",IDC_PASSER_AUTO_SUIV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,175,85,10
+    CONTROL         "Sauvegarder la liste...",IDC_BTN_SAUVEGARDER,"Button",BS_OWNERDRAW | WS_TABSTOP,14,84,101,16
+    GROUPBOX        "Lecture",IDC_STATIC,7,109,324,102
+    LTEXT           "Static",IDC_LIB_AVANCEMENT,221,115,57,8
+    CONTROL         "<",IDC_BTN_ARRIERE,"Button",BS_OWNERDRAW | WS_TABSTOP,119,124,17,16
+    CONTROL         ">",IDC_BTN_AVANT,"Button",BS_OWNERDRAW | WS_TABSTOP,283,124,17,16
+    CONTROL         170,IDC_STATIC,"Static",SS_BITMAP,53,161,9,7
+    CONTROL         "Lecture en boucle",IDC_LECTURE_BOUCLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,164,73,10
+    CONTROL         "Lecture au hasard",IDC_LECTURE_HASARD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,186,74,10
+    GROUPBOX        "Options",IDC_STATIC,113,150,101,54
+    GROUPBOX        "Volume",IDC_STATIC,16,150,83,54
+    CONTROL         "Retirer tout",IDC_BTN_RETIRER_TOUT,"Button",BS_OWNERDRAW | WS_TABSTOP,14,52,101,16
+    CONTROL         "",IDC_BTN_TRIER_AZ,"Button",BS_OWNERDRAW | WS_TABSTOP,312,21,16,14
+    CONTROL         "",IDC_BTN_TRIER_ZA,"Button",BS_OWNERDRAW | WS_TABSTOP,312,35,16,14
+    CONTROL         "",IDC_BTN_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,312,49,16,14
+    CONTROL         "",IDC_BTN_DOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,312,64,16,14
+    LISTBOX         IDC_LIST3,241,178,14,12,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO : <Nom de la société>"
+            VALUE "FileDescription", "TODO : <Description de fichier>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LecteurAudio.exe"
+            VALUE "LegalCopyright", "TODO : (c) <Nom de la société>. Tous droits réservés."
+            VALUE "OriginalFilename", "LecteurAudio.exe"
+            VALUE "ProductName", "TODO : <Nom du produit>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDC_LECTEUR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\btn_quitter_disabled.bmp"
+IDB_BITMAP2             BITMAP                  "res\\btn_quitter_focused.bmp"
+IDB_BITMAP3             BITMAP                  "res\\btn_quitter_normal.bmp"
+IDB_BITMAP4             BITMAP                  "res\\btn_quitter_selected.bmp"
+IDB_BITMAP9             BITMAP                  "res\\btn_aide_disabled.bmp"
+IDB_BITMAP10            BITMAP                  "res\\btn_aide_focused.bmp"
+IDB_BITMAP11            BITMAP                  "res\\btn_aide_normal.bmp"
+IDB_BITMAP12            BITMAP                  "res\\btn_aide_selected.bmp"
+IDB_BITMAP25            BITMAP                  "res\\icone_son.bmp"
+IDB_BITMAP26            BITMAP                  "res\\btn_pause_disabled.bmp"
+IDB_BITMAP27            BITMAP                  "res\\btn_pause_focused.bmp"
+IDB_BITMAP28            BITMAP                  "res\\btn_pause_normal.bmp"
+IDB_BITMAP29            BITMAP                  "res\\btn_pause_selected.bmp"
+IDB_BITMAP30            BITMAP                  "res\\btn_stop_focused.bmp"
+IDB_BITMAP31            BITMAP                  "res\\btn_stop_normal.bmp"
+IDB_BITMAP32            BITMAP                  "res\\btn_stop_selected.bmp"
+IDB_BITMAP33            BITMAP                  "res\\btn_stop_disabled.bmp"
+IDB_BITMAP34            BITMAP                  "res\\btn_lecture_selected.bmp"
+IDB_BITMAP35            BITMAP                  "res\\btn_lecture_disabled.bmp"
+IDB_BITMAP36            BITMAP                  "res\\btn_lecture_focused.bmp"
+IDB_BITMAP37            BITMAP                  "res\\btn_lecture_normal.bmp"
+IDB_BITMAP5             BITMAP                  "res\\btn_avancer_disabled.bmp"
+IDB_BITMAP6             BITMAP                  "res\\btn_avancer_focused.bmp"
+IDB_BITMAP7             BITMAP                  "res\\btn_avancer_normal.bmp"
+IDB_BITMAP8             BITMAP                  "res\\btn_avancer_selected.bmp"
+IDB_BITMAP13            BITMAP                  "res\\btn_back_disabled.bmp"
+IDB_BITMAP14            BITMAP                  "res\\btn_back_focused.bmp"
+IDB_BITMAP15            BITMAP                  "res\\btn_back_normal.bmp"
+IDB_BITMAP16            BITMAP                  "res\\btn_back_selected.bmp"
+IDB_BITMAP17            BITMAP                  "res\\btn_next_disabled.bmp"
+IDB_BITMAP18            BITMAP                  "res\\btn_next_focused.bmp"
+IDB_BITMAP19            BITMAP                  "res\\btn_next_normal.bmp"
+IDB_BITMAP20            BITMAP                  "res\\btn_next_selected.bmp"
+IDB_BITMAP21            BITMAP                  "res\\btn_reculer_disabled.bmp"
+IDB_BITMAP22            BITMAP                  "res\\btn_reculer_focused.bmp"
+IDB_BITMAP23            BITMAP                  "res\\btn_reculer_normal.bmp"
+IDB_BITMAP24            BITMAP                  "res\\btn_reculer_selected.bmp"
+IDB_BITMAP38            BITMAP                  "res\\btn_ajoutertitre_disabled.bmp"
+IDB_BITMAP39            BITMAP                  "res\\btn_ajoutertitre_focused.bmp"
+IDB_BITMAP40            BITMAP                  "res\\btn_ajoutertitre_normal.bmp"
+IDB_BITMAP41            BITMAP                  "res\\btn_ajoutertitre_selected.bmp"
+IDB_BITMAP42            BITMAP                  "res\\btn_chargerliste_disabled.bmp"
+IDB_BITMAP43            BITMAP                  "res\\btn_chargerliste_focused.bmp"
+IDB_BITMAP44            BITMAP                  "res\\btn_chargerliste_normal.bmp"
+IDB_BITMAP45            BITMAP                  "res\\btn_chargerliste_selected.bmp"
+IDB_BITMAP46            BITMAP                  "res\\btn_retirertitre_disabled.bmp"
+IDB_BITMAP47            BITMAP                  "res\\btn_retirertitre_focused.bmp"
+IDB_BITMAP48            BITMAP                  "res\\btn_retirertitre_normal.bmp"
+IDB_BITMAP49            BITMAP                  "res\\btn_retirertitre_selected.bmp"
+IDB_BITMAP50            BITMAP                  "res\\btn_retirertout_disabled.bmp"
+IDB_BITMAP51            BITMAP                  "res\\btn_retirertout_focused.bmp"
+IDB_BITMAP52            BITMAP                  "res\\btn_retirertout_normal.bmp"
+IDB_BITMAP53            BITMAP                  "res\\btn_retirertout_selected.bmp"
+IDB_BITMAP54            BITMAP                  "res\\btn_sauvegarderliste_disabled.bmp"
+IDB_BITMAP55            BITMAP                  "res\\btn_sauvegarderliste_focused.bmp"
+IDB_BITMAP56            BITMAP                  "res\\btn_sauvegarderliste_normal.bmp"
+IDB_BITMAP57            BITMAP                  "res\\btn_sauvegarderliste_selected.bmp"
+IDB_BITMAP58            BITMAP                  "res\\btn_trieraz_disabled.bmp"
+IDB_BITMAP59            BITMAP                  "res\\btn_trieraz_focused.bmp"
+IDB_BITMAP60            BITMAP                  "res\\btn_trieraz_normal.bmp"
+IDB_BITMAP61            BITMAP                  "res\\btn_trieraz_selected.bmp"
+IDB_BITMAP62            BITMAP                  "res\\btn_trierza_disabled.bmp"
+IDB_BITMAP63            BITMAP                  "res\\btn_trierza_focused.bmp"
+IDB_BITMAP64            BITMAP                  "res\\btn_trierza_normal.bmp"
+IDB_BITMAP65            BITMAP                  "res\\btn_trierza_selected.bmp"
+IDB_BITMAP66            BITMAP                  "res\\btn_up_disabled.bmp"
+IDB_BITMAP67            BITMAP                  "res\\btn_up_focused.bmp"
+IDB_BITMAP68            BITMAP                  "res\\btn_up_normal.bmp"
+IDB_BITMAP69            BITMAP                  "res\\btn_up_selected.bmp"
+IDB_BITMAP70            BITMAP                  "res\\btn_down_disabled.bmp"
+IDB_BITMAP71            BITMAP                  "res\\btn_down_focused.bmp"
+IDB_BITMAP72            BITMAP                  "res\\btn_down_normal.bmp"
+IDB_BITMAP73            BITMAP                  "res\\btn_down_selected.bmp"
+IDB_BITMAP74            BITMAP                  "res\\musik.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&À propos de LecteurAudio..."
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\LecteurAudio.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "afxres.rc"     // Composants standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
