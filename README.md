@@ -48,7 +48,7 @@ It may look a little strange on newer operating systems as I used some images to
 
 ## FMod Ex library
 
-<img alt="Java logo" src="doc/logo-fmod.svg" height="32"/>
+<img alt="Fmod logo" src="doc/logo-fmod.svg" height="32"/>
 
 The **FMOD** library basically allows to read and manage audio files, it is a cross-platform sound management library available for many languages.
 It is free for personal use.
